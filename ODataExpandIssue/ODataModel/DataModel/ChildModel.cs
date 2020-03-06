@@ -11,8 +11,6 @@ namespace ODataModel
         [Column("Key")]
         public int Key { get; set; }
 
-        [Column("Display")]
-        public string Display { get; set; }
 
         [Column("ParentKey")]
         [ForeignKey("ParentModel")]

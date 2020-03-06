@@ -77,11 +77,11 @@ namespace ODataIssueApi
             context.Parent.Add(new ParentModel() { Key = 3, Name = "3" });
             context.Parent.Add(new ParentModel() { Key = 4, Name = "4" });
 
-            context.Children.Add(new ChildModel() { Key = 1, ParentKey = 1, Display = "1.1" });
-            context.Children.Add(new ChildModel() { Key = 2, ParentKey = 1, Display = "2.1" });
-            context.Children.Add(new ChildModel() { Key = 3, ParentKey = 2, Display = "3.2" });
-            context.Children.Add(new ChildModel() { Key = 4, ParentKey = 4, Display = "4.4" });
-            context.Children.Add(new ChildModel() { Key = 5, ParentKey = 3, Display = "5.3" });
+            context.Children.Add(new ChildModel() { Key = 1, ParentKey = 1, });
+            context.Children.Add(new ChildModel() { Key = 2, ParentKey = 1, });
+            context.Children.Add(new ChildModel() { Key = 3, ParentKey = 2, });
+            context.Children.Add(new ChildModel() { Key = 4, ParentKey = 4, });
+            context.Children.Add(new ChildModel() { Key = 5, ParentKey = 3, });
 
             context.SaveChanges();
         }
