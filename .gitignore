@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/ODataExpandIssue/.vs/ODataExpandIssue
+/ODataExpandIssue/ODataExpandIssue/bin/Debug/netcoreapp3.1
+/ODataExpandIssue/ODataExpandIssue/obj
+/ODataExpandIssue/ODataIssueApi/bin/Debug/netcoreapp3.1
+/ODataExpandIssue/ODataIssueApi/obj
+/ODataExpandIssue/ODataModel/bin/Debug/netcoreapp3.1
+/ODataExpandIssue/ODataModel/obj
