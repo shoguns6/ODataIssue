@@ -10,8 +10,15 @@ namespace ODataIssueApi
     {
         public ParentMapperProfile()
         {
-            CreateMap<ParentModel, ParentDto>();
-            CreateMap<ParentDto, ParentModel>();
+            CreateMap<ParentModel, ParentDto>()
+                //.ForMember(dto => dto.Childrens, conf => { conf.AllowNull(); conf.ExplicitExpansion(); })
+                ;
+            CreateMap<ParentDto, ParentModel>()
+                //.ForMember(model => model.Childrens, conf => { conf.AllowNull(); conf.ExplicitExpansion(); })
+                ;
+
+            CreateMap<ChildModel, ChildDto>();
+            CreateMap<ChildDto, ChildModel>();
         }
     }
 }

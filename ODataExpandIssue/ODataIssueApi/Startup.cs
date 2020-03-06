@@ -60,7 +60,11 @@ namespace ODataIssueApi
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseMvc(routeBuilder => routeBuilder.EnableDependencyInjection());
+            app.UseMvc(routeBuilder => 
+            {
+                routeBuilder.EnableDependencyInjection();
+                routeBuilder.Expand().Select().Count().Filter().OrderBy();
+            });
 
 
         }
