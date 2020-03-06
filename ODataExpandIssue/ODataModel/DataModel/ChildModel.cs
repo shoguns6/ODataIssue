@@ -19,6 +19,6 @@ namespace ODataModel
         public int ParentKey { get; set; }
 
         
-        public virtual ParentModel ParentModel { get; set; }
+        public ParentModel ParentModel { get; set; }
     }
 }

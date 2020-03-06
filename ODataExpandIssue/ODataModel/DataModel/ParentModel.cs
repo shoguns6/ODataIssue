@@ -16,6 +16,6 @@ namespace ODataModel
         [Column("Display")]
         public string Name { get; set; }
 
-        public virtual ICollection<ChildModel> Childrens { get; set; }
+        public ICollection<ChildModel> Childrens { get; set; }
     }
 }

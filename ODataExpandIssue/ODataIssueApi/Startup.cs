@@ -63,7 +63,7 @@ namespace ODataIssueApi
             app.UseMvc(routeBuilder => 
             {
                 routeBuilder.EnableDependencyInjection();
-                routeBuilder.Expand().Select().Count().Filter().OrderBy();
+                routeBuilder.Expand().Select().Count().Filter().OrderBy().MaxTop(10);
             });
 
 
